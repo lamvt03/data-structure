@@ -125,9 +125,6 @@ int main()
     cin >> n;
     list.inputList(n);
 
-    int k;
-    cin >> k;
-    list.solve(k);
 
     list.printList();
     return 0;
