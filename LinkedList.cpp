@@ -107,6 +107,15 @@ public:
             this->addAtTail(temp);
         }
     }
+    void destroy(){
+        node* p = NULL;
+        while(this->pHead != NULL){
+            p = this->pHead;
+            this->pHead = this->pHead->next;
+            delete p;
+            p = NULL;
+        }
+    }
     void printList()
     {
         node *pNode = pHead;
